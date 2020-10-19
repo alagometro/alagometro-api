@@ -36,7 +36,7 @@ Lista de todos os locais:
 
 Atualiza o nível de alagamento de um local
 
-    GET http://localhost:4567/update/:local_id/:nivel
+    GET http://localhost:4567/update/:secret/:local_id/:nivel
 
     {
         "id": 1,
