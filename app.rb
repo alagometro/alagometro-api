@@ -19,10 +19,9 @@ end
 
 get '/update/:location/:status' do
   location = Location.find(params[:location])
-  Status.create(
-    location_id: location.id,
-    level: params[:status].to_i
-  )
+  Status.create(location_id: location.id, level: params[:status].to_i)
+
+  location.to_json
 rescue Exception => e
   { error:  e.message }.to_json
 end
