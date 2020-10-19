@@ -1,24 +1,12 @@
-Hello!
+Alagômetro API
 ====
 
-This is a demonstrator for [Sinatra](http://www.sinatrarb.com/) and [Twitter Bootstrap](http://getbootstrap.com/).
+API Rest do Alagômetro
 
-Use it as a boilerplate to start your own apps.
-
-Go!
+Rodando o Projeto
 ===
 
-Download and run sinatra-bootstrap:
+    bundle install
+    bundle exec ruby app.rb
 
-    git clone https://github.com/bootstrap-ruby/sinatra-bootstrap
-
-    cd sinatra-bootstrap
-    bundle install             # To install sinatra
-
-    bundle exec ruby app.rb    # To run the sample
-
-Then open [http://localhost:4567/](http://localhost:4567/)
-
-What's next?
-============
-- Try the rerun gem to restart Sinatra automatically when you change source files: https://github.com/alexch/rerun
+Abra no navegador [http://localhost:4567/](http://localhost:4567/)
