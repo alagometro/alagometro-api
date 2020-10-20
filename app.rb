@@ -1,13 +1,13 @@
 require 'rubygems'
 require 'bundler'
+require 'active_record'
 
 Bundler.require
 
 require 'dotenv/load'
 require './models/location.rb'
 require './models/status.rb'
-
-set :database, {adapter: "sqlite3", database: ENV['DATABASE']}
+require './config/environment.rb'
 
 before do
   content_type :json
