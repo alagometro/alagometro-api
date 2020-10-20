@@ -5,7 +5,13 @@ class Location < ActiveRecord::Base
     statuses.order('created_at DESC').first
   end
 
-  def as_json(options={})
-    super(options.merge({:methods => :status}))
+  def to_api
+    {
+      title: address,
+      lat: location.split(',').first,
+      lng: location.split(',').last,
+      level: status.level,
+      last_update: status.updated_at
+    }
   end
 end
