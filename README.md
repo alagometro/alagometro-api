@@ -19,19 +19,11 @@ Lista de todos os locais:
     GET http://localhost:4567/
     
     [{
-        "id": 1,
-        "title": "Principal dos Bancários",
-        "address": "R. Bancários Sérgio Guerra x R. João Batista Maia",
-        "location": "",
-        "created_at": "2020-10-19T23:17:34.320Z",
-        "updated_at": "2020-10-19T23:17:34.320Z",
-        "status": {
-            "id": 3,
-            "location_id": 1,
-            "level": 1,
-            "created_at": "2020-10-19T23:27:13.082Z",
-            "updated_at": "2020-10-19T23:27:13.082Z"
-        }
+        "title": "R. Bancários Sérgio Guerra x R. João Batista Maia",
+        "lat": "-7.15016224",
+        "lng": "-34.8407793",
+        "level": 1,
+        "last_update": "2020-10-20T03:01:30.318Z"
     }]
 
 Atualiza o nível de alagamento de um local
@@ -39,17 +31,9 @@ Atualiza o nível de alagamento de um local
     GET http://localhost:4567/update/:secret/:local_id/:nivel
 
     {
-        "id": 1,
-        "title": "Principal dos Bancários",
-        "address": "R. Bancários Sérgio Guerra x R. João Batista Maia",
-        "location": "",
-        "created_at": "2020-10-19T23:17:34.320Z",
-        "updated_at": "2020-10-19T23:17:34.320Z",
-        "status": {
-            "id": 4,
-            "location_id": 1,
-            "level": 1,
-            "created_at": "2020-10-19T23:32:56.664Z",
-            "updated_at": "2020-10-19T23:32:56.664Z"
-        }
+        "title": "R. Bancários Sérgio Guerra x R. João Batista Maia",
+        "lat": "-7.15016224",
+        "lng": "-34.8407793",
+        "level": 3,
+        "last_update": "2020-10-20T03:01:30.318Z"
     }
